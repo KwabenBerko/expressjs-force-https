@@ -1,10 +1,10 @@
 # expressjs-force-https
-A simple express.js that redirects incoming unencrypted HTTP requests to HTTPS
+A simple express.js middleware that redirects incoming unencrypted HTTP requests to HTTPS.
 
 ## Installation
 
 ``` javascript
-npm install openweathermap-node
+npm install expressjs-force-https
 ```
 
 ## Usage
@@ -13,6 +13,7 @@ const express = require("express");
 const forcehttps = require("expressjs-force-https");
 const app = express();
 
+//Redirecting incoming unencrypted http requests
 app.use(forcehttps);
 
 app.listen(3000, () => {

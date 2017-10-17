@@ -1,7 +1,7 @@
 {
   "name": "expressjs-force-https",
   "version": "1.0.0",
-  "description": "A simple express.js that redirects incoming unencrypted HTTP requests to HTTPS",
+  "description": "A simple express.js middleware that redirects incoming unencrypted HTTP requests to HTTPS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
