@@ -1,0 +1,11 @@
+{
+  "name": "expressjs-force-https",
+  "version": "1.0.0",
+  "description": "A simple express.js that redirects incoming unencrypted HTTP requests to HTTPS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kwabena Berko <kwabenaberko95@gmail.com>",
+  "license": "MIT"
+}
