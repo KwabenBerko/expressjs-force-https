@@ -1,11 +1,28 @@
 {
   "name": "expressjs-force-https",
   "version": "1.0.0",
-  "description": "A simple express.js middleware that redirects incoming unencrypted HTTP requests to HTTPS.",
+  "description": "A simple express.js middleware that redirects incoming unencrypted HTTP requests to HTTPS. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KwabenBerko/expressjs-force-https.git"
+  },
+  "keywords": [
+    "https",
+    "http",
+    "ssl",
+    "secure",
+    "nodejs",
+    "expressjs",
+    "middlewares"
+  ],
   "author": "Kwabena Berko <kwabenaberko95@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KwabenBerko/expressjs-force-https/issues"
+  },
+  "homepage": "https://github.com/KwabenBerko/expressjs-force-https#readme"
 }
