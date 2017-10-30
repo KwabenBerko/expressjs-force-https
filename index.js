@@ -1,10 +1,18 @@
-const forceHttps = (req, res, next) => {
+const forceHTTPS = (req, res, next) => {
 	if(!req.secure){
-		let secureUrl = "https://" + req.headers['host'] + req.url;
-		res.writeHead(301, { "Location":  secureUrl });
-		return res.end();
+		return res.redirect('https://' + req.get('host') + req.url);
 	}
 	next();
 }
 
-module.exports = forceHttps;
+const forceAzureHTTPS = (req, res, next) => {
+	if(!req.get("x-arr-ssl")){
+		return res.redirect('https://' + req.get('host') + req.url);
+	}
+	next();
+}
+
+module.exports = {
+	forceHTTPS,
+	forceAzureHTTPS
+};
