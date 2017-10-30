@@ -1,6 +1,6 @@
 {
   "name": "expressjs-force-https",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple express.js middleware that redirects incoming unencrypted HTTP requests to HTTPS. ",
   "main": "index.js",
   "scripts": {
