@@ -8,15 +8,23 @@ npm install expressjs-force-https
 ```
 
 ## Usage
+
 ``` javascript
 const express = require("express");
-const forcehttps = require("expressjs-force-https");
+const forceHTTPS = require("expressjs-force-https").forceHTTPS;
 const app = express();
 
 //Redirecting incoming unencrypted http requests
-app.use(forcehttps);
+app.use(forceHTTPS);
 
 app.listen(3000, () => {
     console.log(`Server Running...`);
 });
+```
+
+### To force HTTPS on a Node App Service on Azure:
+``` javascript
+const forceAzureHTTPS = require("expressjs-force-https").forceAzureHTTPS;
+
+app.use(forceAzureHTTPS);
 ```
